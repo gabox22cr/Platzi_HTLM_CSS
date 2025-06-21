@@ -1,0 +1,35 @@
+.main-nav { /* Clase para aplicar estilos CSS */
+    margin-top: 10px;
+    list-style: none;
+    padding: 0px;
+    background-color: #13a4a4;
+}
+
+/* Una PseudoClase define el estilo de un estado especial de un elemento */
+
+.main-nav__item { /* PseudoClase para aplicar estilos CSS de la Clase principal */
+    display: inline-block;
+}
+
+.main-nav__item a { /* Estilo aplicado en específico a las etiquetas a que estén dentro ed la subclase main-nav__item  */
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.main-nav__item a:hover { /* Color del texto de la etiqueta cuando el cursor está sobre el texto */
+    color: blue;
+}
+
+.main-nav__item a:active { /* "a:active" Color al texto de etiqueta cuando se da clic */
+    color: red;
+}
+
+/* Pseudo Elementos */
+/* Una PseudoClase define el estilo de una parte especifica de un elemento */
+
+.main-nav__item a::after { /* Se agrega contenido al lado derecho de cada etiqueta a de la PsedoClase */
+    content: " | ";
+}
+
