@@ -1,0 +1,13 @@
+/* Resetear los estilos del navegador de internet. un "*" es el selector universal */
+* { /* Con esto soluciona el scroll extra en la pantalla a pesar de haber indicado en el estilo del main que el width era 100% */
+    box-sizing: border-box; /* calcula automáticamente el tamaño del elemento con el padding y el border  */
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px; /* parámetro 1: padding arriba y abajo | parámetro 2: padding derecha e izquierda */
+}
