@@ -1,0 +1,4 @@
+/* Modificar todas las etiquetas de párrafo que tengan como hermano general un H2*/
+h2 ~ p {
+    color: red;
+}
