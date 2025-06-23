@@ -1,0 +1,10 @@
+
+/* Combinador Hijo: Que el padre (div) sea mayor que una etiqueta hija (p) */
+div > p {
+    color: red;
+}
+
+/* Combinador descendienete: */ 
+div p {
+    color: blue;
+}
