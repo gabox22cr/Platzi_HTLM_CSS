@@ -1,0 +1,4 @@
+/* Combinador hermano cercano (Adyacent sibiling) */
+h2 + p {
+    color: red;
+}
