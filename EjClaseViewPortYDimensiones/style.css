@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    width: 100vw;  /* con este width y height es para que el contenedor main ocupe el 100 sin importar el tamaño de la pantalla */
+    height: 100vh;
+    background-color: purple;
+}
+
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 500px; /* este para que no se salga el texto del contenedor cuando se minimiza la pantalla */ 
+    margin: 0 auto; /* 0 margin de arriba y abajo, pero de izq a der que se ajuste de manera automática*/
+    background-color: red;
+}
