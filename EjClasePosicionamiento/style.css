@@ -22,6 +22,7 @@ main {
 }
 
 .box1 {
+    position: absolute; /* para que quede metido en el otro box */ 
     background-color: rgb(255, 0, 0);
     border: 1px black;
     border-style:groove;
