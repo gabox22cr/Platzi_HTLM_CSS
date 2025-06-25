@@ -1,0 +1,128 @@
+:root { /* Usado para declarar variables */ 
+    --primary-color: #003476;
+    --secondary-color: #b4d2f7;
+    --header-size: 4rem;
+    --font: 1.8rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    width: 100vw;
+    height: 15vh;
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+
+.nav-header {
+    list-style: none;
+    display: flex;
+    margin-top: 6rem;
+    justify-content: left;
+    gap: 2rem;
+}
+
+.nav-header li a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    width: 100vw;
+    height: 70vh;
+    font-size: var(--font);
+}
+
+h1 {
+    font-size: var(--header-size);
+    color: var(--primary-color);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.layout {
+    display: flex;
+    flex: 1;
+    min-height: 0; /* Necesario para evitar overflow con sidebar fijo */
+}
+
+.sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: cornflowerblue;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.logo {
+    width: 250px;
+    height: 100%;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+.box-logo {
+    margin-right: 5rem;
+    height: 13rem;
+}
+
+.box {
+    height: 100px;
+    background-color: aqua;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.box-section {
+    background-color: white;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+content {
+    flex: 1;
+    background-color: azure;
+    padding: 2rem;
+    overflow-y: auto;
+}
+
+footer {
+    padding: 3rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+    font-weight: bold;
+}
