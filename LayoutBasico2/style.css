@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: sans-serif;
+    height: 100%; /* Hace que el layout ocupe toda la ventana (Vista de pantalla completa) */
+    overflow-x: hidden; /* Evita scroll lateral si algo se desborda horizontalmente */
+}
+
+/* Layout general */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+    background-color: cornflowerblue;
+    padding: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav-header {
+  list-style: none;
+  display: flex; /* Pone los <li> en una fila horizontal */
+  justify-content: right;  /* Centra el menú horizontalmente */
+  gap: 1rem;                /* Espacio entre elementos */
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header li {
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav-header li a {
+  text-decoration: none; /* Quita el subrayado de los links */
+  color: darkslateblue;
+  font-weight: bold;
+  /*transition: color 0.3s ease; */
+}
+
+.nav-header li a:hover { /* Cambiar el color del texto cuando el mouse pasa por encima */
+  color: aqua;
+}
+
+.nav-header li a:active { /* Cambiar el color del texto al dar clic */
+    color: red;
+    transition: color;
+}
+
+/* Contenedor de sidebar y contenido */
+.layout {
+  display: flex;
+  flex: 1;
+  min-height: 0; /* Necesario para evitar overflow con sidebar fijo */
+
+}
+
+.sidebar {
+    width: 250px;
+    background-color: aqua;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.box {
+    height: 100px;
+    background-color: burlywood;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.content {
+    flex: 1; /* Hace que ocupe todo el espacio restante. Así no necesitas darle ancho fijo */
+    background-color: #6b6b7d;
+    padding: 2rem;
+    overflow-y: auto;
+    color: white;
+}
+
+.footer {
+    background-color: yellow;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
