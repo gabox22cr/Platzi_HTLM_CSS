@@ -4,8 +4,14 @@
     padding: 0;
 }
 
-html, body {
+html {
+    font-size: 62.5%;
+    height: 100%; /* Hace que el layout ocupe toda la ventana (Vista de pantalla completa) */
+}
+
+body {
     font-family: sans-serif;
+    font-size: 1.6rem;
     height: 100%; /* Hace que el layout ocupe toda la ventana (Vista de pantalla completa) */
     overflow-x: hidden; /* Evita scroll lateral si algo se desborda horizontalmente */
 }
@@ -35,7 +41,7 @@ body {
 
 .nav-header li {
     display: inline-block;
-    font-size: 15px;
+    font-size: 1.5rem;
     margin: 5px 0;
     padding-left: 10px;
     padding-right: 10px;
@@ -92,7 +98,7 @@ body {
 
 .footer {
     background-color: yellow;
-    padding: 1rem;
+    padding: 1.5rem;
     text-align: center;
     font-weight: bold;
 }
