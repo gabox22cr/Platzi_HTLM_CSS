@@ -53,6 +53,15 @@ header {
     color: white;
 }
 
+.nav-header li a:hover { /* Cambiar el color del texto cuando el mouse pasa por encima */
+  color: var(--secondary-color);;
+}
+
+.nav-header li a:active { /* Cambiar el color del texto al dar clic */
+    color: red;
+    transition: color;
+}
+
 main {
     width: 100vw;
     height: 70vh;
